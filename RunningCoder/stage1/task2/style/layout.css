@@ -137,6 +137,12 @@ aside form label {
     text-align: right;
     cursor: pointer;
 }
+form input + label {
+    float: none;
+    padding: 0;
+    text-align: center;
+}
+
 aside form div {
     clear: left;
     width: 70%;

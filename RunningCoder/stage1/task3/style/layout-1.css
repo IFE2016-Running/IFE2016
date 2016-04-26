@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 20px;
+    padding: 20px 160px 20px 240px;
+    border: 1px solid #999;
+    background: #eee;
+    min-width: 200px;
+}
+.container:after {
+    display: block;
+    clear: both;
+    content: ' ';
+}
+main, .team-logo, aside {
+    float: left;
+    background: #fff;
+}
+main {
+    width: 100%;
+    outline: 1px solid #999;
+}
+main p {
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+main .member-intrduction h2 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+main .member-intrduction h3 {
+    font-size: .9em;
+    margin: 5px 0;
+}
+.team-logo {
+    position: relative;
+    left: -220px;
+    box-sizing: border-box;
+    width: 200px;
+    margin-left: -100%;
+    padding: 20px;
+    outline: 1px solid #999;
+}
+.team-logo img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    outline: 1px solid #999;
+    background: #eee;
+}
+.team-logo h2 {
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+aside {
+    position: relative;
+    right: -140px;
+    box-sizing: border-box;
+    width: 120px;
+    margin-left: -120px;
+    padding: 20px;
+    outline: 1px solid #999;
+}
+aside ul {
+    list-style: none;
+}
+aside ul li {
+    margin-bottom: 20px;
+}
+aside ul li:last-child {
+    margin-bottom: 0;
+}
+aside li img {
+    width: 80px;
+    height: 80px;
+    outline: 1px solid #999;
+    background: #eee;
+}
