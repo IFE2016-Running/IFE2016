@@ -3,7 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <style>/*  就是圣杯布局 = =，我中间内容就不写了，经过测试，自适应了。父高度因为清浮动，由里面较高内容撑开*/
+    <style>
+        body,div{margin: 0;padding: 0;}
         body{ font-size: 12px;}
         li{list-style: none;}
         ul{margin: 0;padding: 0;}
@@ -11,9 +12,6 @@
         .clearfix{zoom:1;}
         .content{
             position: relative;
-            margin: 10px;
-            width: 100%;
-            border: 1px solid #999;
             background-color: #eee;
             padding: 20px 162px 0 242px;
         }
@@ -29,7 +27,7 @@
             position: absolute;
             left: 0;
             top: 20px;
-            float: left;
+            /*float: left;*/
         }
         .team{
             width:158px;
@@ -57,7 +55,7 @@
             position: absolute;
             right: 0;
             top:20px;
-            float: left;
+            /*float: left;*/
         }
         .person{
             width: 78px;
@@ -66,7 +64,7 @@
             background-color: #fff;
             border: 1px solid #999;
         }
-        .person li{
+        .person li {
             margin-bottom: 20px;
         }
     </style>
