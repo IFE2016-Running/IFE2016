@@ -4,36 +4,31 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
+        body,div{margin: 0; padding: 0;}
         body{ font-size: 12px;}
         li{list-style: none;}
         ul{margin: 0;padding: 0;}
         .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
         .clearfix{zoom:1;}
         .content{
-            position: relative;
-            margin: 10px;
-            width: 100%;
-            border: 1px solid #999;
             background-color: #eee;
             /*padding: 20px 162px 0 242px;*/
+            padding-top: 20px;
         }
-        .prfileCon{
+        .profileCon,.teamCon,.personCon{float: left;}
+        .profileCon{
             width: 100%;
             background-color: yellow;
         }
         .wrap{
             height: 500px;
             background-color: red;
-            margin: 20px 162px 0 242px;
+            margin: 0 162px 0 242px;
         }
         .teamCon{
             width: 202px;/* 里面还有team的两个边框*/
-            height:100%;
-            padding: 20px 20px 0 20px;
-            position: absolute;
-            left: 0;
-            top: 20px;
-            float: left;
+            padding: 0 20px 0 20px;
+            margin-left: -100%;
         }
         .team{
             width:158px;
@@ -52,16 +47,11 @@
         }
         .teamR{
             float: right;
-
         }
         .personCon{
             width: 122px;
-            height: 100%;
-            padding: 20px 20px 0 20px;
-            position: absolute;
-            right: 0;
-            top:20px;
-            float: left;
+            padding: 0 20px 0 20px;
+           margin-left: -162px;
         }
         .person{
             width: 78px;
@@ -77,7 +67,7 @@
 </head>
 <body>
 <div class="content clearfix">
-    <div class="prfileCon">
+    <div class="profileCon"><!-- 这个宽度100%，再加margin就会在父级里位置偏移 -->
         <div class="wrap"></div><!-- 是里面这个div起作用的，加上背景色和margin -->
     </div>
     <div class="teamCon">
