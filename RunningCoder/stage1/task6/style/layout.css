@@ -229,7 +229,7 @@ header::after, main::after, .part1::after, .part3 .index li::after {
 }
 .part2 > p {
     font-size: 12px;
-    color: #767777;
+    color: rgba(118, 119, 119, .7);
     line-height: 16px;
     text-indent: 2em;
 }
