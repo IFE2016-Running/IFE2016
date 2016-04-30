@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", "STXihei";
+    background: #939393;
+}
+.container {
+    width: 980px;
+    height: 1386px;
+    margin: 20px auto;
+    background: #fff;
+}
+.wrapper {
+    padding: 0 44px;
+}
+.wrapper > header {
+    position: relative;
+    border-bottom: 2px solid #938e8c;
+    margin-bottom: 34px;
+}
+
+header::after, main::after, .part1::after, .part3 .index li::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.brand-wrapper {
+    float: left;
+    width: 110px;
+    height: 61px;  
+    background: #d45d5c;
+}
+.brand, .date {
+    font: 12px/1 "SimHei", "STHeiti", "STHeiti Light", "黑体";
+}
+.brand-wrapper .brand, .date {
+    position: absolute;
+    bottom: 3px;
+}
+.brand-wrapper .brand {
+    left: 7px;
+    color: #fff;
+}
+.date {
+    color: #d45d5c;
+    right: 0;
+}
+.date {
+    float: right;
+}
+
+.part1 {
+    width: 641px;
+    position: relative;
+}
+.part1 header {
+    position: relative;
+}
+.part1 header .mask-left, .part1 header .mask-right {
+    position: absolute;
+    width: 191px;
+    height: 301px;
+    top: 0;
+}
+.part1 header .mask-left {
+    left: 0;
+    background: rgba(66, 140, 89, .5);
+}
+.part1 header .mask-right {
+    right: 0;
+    background: rgba(204, 118, 128, .5);
+}
+.part1 section {
+    margin-top: 40px;
+    float: left;
+}
+.part1 .section1 {
+    width: 228px;
+    margin-right: 27px;
+}
+.part1 .section2 {
+    width: 205px;
+    margin-right: 28px;
+}
+.part1 .section3 {
+    width: 133px;
+    margin-right: 20px;
+}
+.part1 section h3 {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.part1 .section1 h3{
+    color: #418c59;
+}
+.part1 .section2 h3{
+    color: #d2994f;
+}
+.part1 .section3 h3{
+    color: #cc7680;
+}
+.part1 section p {
+    font-size: 12px;
+    line-height: 16px;
+}
+.part1 .section1 p {
+    color: rgba(118, 119, 119, .7);
+    font-family: "SimSun", "宋体";
+}
+.part1 .section2 p, .part1 .section3 p, .part1 .section3 ul {
+    color: #231815;
+    opacity: .7;
+}
+.part1 .section3 p, .part1 .section3 ul {
+    line-height: 21px;
+}
+.part1 .section3 ul {
+    margin-top: 20px;
+    font-size: 12px;
+}
+.part1 .section3 ul li span {
+    color: #cd4a48;
+}
+
+.part1 aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 48px;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    width: 203px;
+}
+.part1 aside header {
+    border-top: 2px solid #cc8091;
+}
+.part1 aside header h2 {
+    margin-top: 9px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: underline;
+    line-height: 30px;
+}
+.part1 aside header h2 span {
+    font-variant: small-caps;
+}
+.part1 aside header p {
+    font-size: 12px;
+    color: #676767;
+    line-height: 10px;
+    font-family: "KaiTi", "楷体", "STKaiti", "华文楷体";
+    margin-top: 2px;
+} 
+.part1 aside .body {
+    font-size: 116px;
+    color: #75b86b;
+    font-weight: bold;
+}
+.part1 aside .body p {
+    margin-left: -13px;
+}
+.part1 aside footer {
+    color: #cc8091;
+    position: relative;
+}
+.part1 aside footer::after {
+    color: #cc8091;
+    position: relative;
+}
+.part1 aside footer span {
+    font-size: 55px;
+    margin: 0 6px;
+    float: left;
+}
+.part1 aside footer .footer-wrapper {
+    padding-top: 18px;;
+}
+.part1 aside footer .footer-wrapper p {
+    font-size: 21px;
+}
+.part1 aside footer .footer-wrapper p + p {
+    font-size: 12px;
+    color: rgba(35, 24, 21, .4) ;
+}
+
+.part2, .part3 {
+    margin-top: 68px;
+}
+.part2 {
+    width: 416px;
+    margin-right: 18px;
+    float: left;
+}
+.part2 header {
+    font-family: "SimHei", "STHeiti", "STHeiti Light", "黑体";
+    font-weight: bold;
+    color: #11456b;
+    border-bottom: 2px solid #11456b;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+}
+.part2 header p {
+    line-height: 40px;
+    font-size: 42px;
+}
+.part2 header p span{
+    color: #f5e327;
+    font-size: 72px;
+    margin-left: -3px;
+    margin-right: 4px;
+}
+.part2 header p + p {
+    font-size: 33px;
+}
+.part2 > p {
+    font-size: 12px;
+    color: #767777;
+    line-height: 16px;
+    text-indent: 2em;
+}
+.part2 .first {
+    text-indent: 0;
+}
+.part2 .first::first-letter {
+    font-size: 70px;
+    color: #f5e327;
+    float: left;
+    margin-right: 6px;
+    line-height: 70px;
+    margin-left: -4px;
+}
+.part2 .first img {
+    float: right;
+    margin-top: 20px;
+    margin-left: 12px;
+    padding-right: 10px;
+}
+
+.part3 {
+    float: left;
+}
+.part3 header {
+    position: relative;
+    height: 257px;
+}
+.part3 header .title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 458px;
+    height: 60px;
+    background: rgba(4, 0, 0, .4) ;
+}
+.part3 header .title p {
+    float: left;
+}
+.part3 header .title p:first-child {
+    border-left: 3px solid #72b16a;
+    margin: 8px 0 8px 38px;
+    color: #fff;
+    font-size: 26px;
+    padding: 9px 0 9px 12px;
+    line-height: 1;
+}
+.part3 header .title p + p {
+    font-size: 12px;
+    color: #72b16a;
+    padding: 30px 0 0 8px;
+}
+.part3 .index {
+    position: relative;
+    margin-top: 30px;
+    width: 458px;
+    height: 318px;
+    background: #eeedd6;
+    padding: 6px 22px 0 22px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.part3 .index li {
+    margin-top: 24px;
+    margin-left: 26px;
+    position: relative;
+    font-family: "SimSun", "宋体";
+}
+.part3 .index li::before {
+    border-width: 8px 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #11456c;
+    content: " ";
+    position: absolute;
+    left: -20px;
+}
+.part3 .index li p{
+    float: left;
+    font-size: 16px;
+    color: #5b5b5b;
+    
+}
+.part3 .index li span {
+    float: right;
+    font-size: 12px;
+    color: #5a5b5b;
+    line-height: 16px;
+    position: relative;;
+}
+.part3 .index li span::before {
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    position: absolute;
+    height: 16px;
+    line-height: 16px;
+}
+
+.part3 .index ul li:nth-child(1) span::before {
+    width: 200px; 
+    left: -200px;
+}
+.part3 .index ul li:nth-child(2) span::before {
+    width: 220px; 
+    left: -220px;
+}
+.part3 .index ul li:nth-child(3) span::before {
+    width: 230px; 
+    left: -230px;
+}
+.part3 .index > p {
+    float: right;
+    width: 160px;
+    margin-top: 50px;
+    color: #5a5b5b;
+    font-size: 14px;
+    font-family: "黑体";
+    position: relative;
+    text-indent: 36px;;
+}
+.part3 .index > p span {
+    position: absolute;
+    font-size: 72px;
+    color: #d45d5c;
+    line-height: 6px;
+}
+.part3 .index > p span:nth-child(1) {
+    float: left;
+    top: 16px;
+    left: -80px;
+}
+.part3 .index > p span:nth-last-child(1) {
+    float: right;
+    bottom: -24px;
+    right: -36px;;
+}
+.part3 .index aside {
+    position: absolute;
+    width: 260px;
+    height: 160px;
+    background: #d45d5c;
+    left: 0;
+    bottom: 0;
+    padding: 40px 0 34px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.part3 .index aside p { 
+    float: left;
+    color: #fff;   
+}
+.part3 .index aside p:nth-child(1) {
+    font-size: 110px;
+    line-height: 86px;
+    height: 86px;
+    border-right: 2px solid #fff;
+    margin-left: 14px;
+    margin-right: 9px;
+    padding-right: 8px;
+    font-size: 110px;
+}
+.part3 .index aside p:nth-child(2) {
+    font-size: 21px;
+    line-height: 24px;
+    font-family: "SimHei", "STHeiti", "STHeiti Light", "黑体";
+}
+.part3 .index aside p:nth-child(3) {
+    margin-top: 5px;
+    width: 138px;
+    font-size: 12px;
+    line-height: 1;
+    font-family: "SimHei", "STHeiti", "STHeiti Light", "黑体";
+}
+
+.wrapper > footer {
+    margin-top: 39px;
+    border-top: 1px solid #938e8c;
+    color: #938e8c;
+}
+.wrapper > footer .brand {
+    float: right;
+    color: #d45d5c;
+    padding-top: 5px;
+}
