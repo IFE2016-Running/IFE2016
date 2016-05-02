@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE任务展示列表</title>
+    <link rel="stylesheet" type="text/css" href="Style/layout.css">
+</head>
+<body>
+    <header>
+        <h1><a href="http://ife.baidu.com/task/all" title="百度前端技术学院" target="_blank">IFE2016</a> 任务展示列表</h1>
+        <ul>
+            <li><a class="js-avatar" href="javascript:;" id="RC"></a></li>
+            <li><a class="js-avatar" href="javascript:;" id="YY"></a></li>
+        </ul>
+    </header>
+    <main>
+        <!-- JS添加 -->
+    </main>
+
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="Scripts/database.js"></script>
+<script type="text/javascript">
+$(function () {
+    var avatars = ["Images/avatar-1.jpg", "Images/avatar-2.png"];
+    $.each($("header li a"), function(index, val) {
+        $(this).css('background-image', 'url(' + avatars[index] + ')');
+    });
+    $(".js-avatar").one('click', function(event) {
+        var self = $(this);
+        $("header").css({
+            top: '20px',
+            fontSize: '1.5em'
+        });
+        $("header ul").css({
+            marginTop: '10px'
+        });
+        $.each($("header ul li"), function(index, val) {
+            var li = self.parent();
+            if (li.index() == index) {
+                console.log($(this));
+                $(this).find("a").css({
+                    width: '50px',
+                    height: '50px',
+                    borderWidth: '2px'
+                });
+                $(this).css('left', '50%');
+                return;
+            }
+            $(this).css('display', 'none');
+            console.log(1);
+        });
+        initMain(db[$(this).attr('id') =='RC' ? 0 : 1]);
+        setTimeout(function() {
+            $("main").fadeIn(500);
+        }, 300);
+    });
+function initMain (object) {
+    $.each(object, function(key, val) {
+        var isEmpty = true;
+        var arrA = new Array();
+        $.each(val, function(key, val) {
+            if (val) {
+                isEmpty = false;
+                var btnTask = '<a href="' + val.url + '" title="' + val.title + '" target="_blank">' + key + '</a>';
+                arrA.push(btnTask);
+                console.log(btnTask);
+            }
+        });
+        if (!isEmpty) {
+            var tmp = '<article><h2>' + key + '</h2>' + arrA.join("") +'</article>';
+            console.log(tmp);
+            $('main').append(tmp);
+        }
+    });
+}
+});
+</script>
+</body>
+</html>
