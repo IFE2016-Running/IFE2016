@@ -18,7 +18,7 @@ var db = new Array();
                 url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task4/index-1.html'
             },
             '任务五' : {
-                title : '任务五：零基础HTML及CSS编码（二）',
+                title : '零基础HTML及CSS编码（二）',
                 url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task5/index.html'
             },
             '任务六' : {
@@ -69,8 +69,14 @@ var db = new Array();
                 title : '定位和居中问题',
                 url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task4/task4.html'
             },
-            '任务五' : '',
-            '任务六' : ''
+            '任务五' : {
+                title : '零基础HTML及CSS编码（二）',
+                url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task5/task5.html'
+            },
+            '任务六' : {
+                title : '通过HTML及CSS模拟报纸排版',
+                url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task6/task6.html'
+            }
         },
         '阶段二' : {
             '任务一' : '',
