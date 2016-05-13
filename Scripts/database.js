@@ -25,6 +25,10 @@ var db = new Array();
                 title : '通过HTML及CSS模拟报纸排版',
                 url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task6/index.html'
             },
+            '任务七' : {
+                title : '实现常见的技术产品官网的页面架构及样式布局',
+                url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task7/index.html'
+            },
         },
         '阶段二' : {
             '任务一' : '',
