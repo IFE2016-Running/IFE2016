@@ -29,6 +29,10 @@ var db = new Array();
                 title : '实现常见的技术产品官网的页面架构及样式布局',
                 url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task7/index.html'
             },
+            '任务八' : {
+                title : '响应式网格（栅格化）布局',
+                url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task8/index.html'
+            },
         },
         '阶段二' : {
             '任务一' : '',
