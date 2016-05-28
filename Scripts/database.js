@@ -33,6 +33,10 @@ var db = new Array();
                 title : '响应式网格（栅格化）布局',
                 url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task8/index.html'
             },
+            '任务九' : {
+                title : '使用HTML/CSS实现一个复杂页面',
+                url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task9/index.html'
+            },
         },
         '阶段二' : {
             '任务一' : '',
