@@ -1,0 +1,36 @@
+.container {
+	border: 1px solid #979797;
+	padding: 20px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.container div {
+	width: 150px;
+	border: 1px solid red;
+	margin-bottom: 10px;
+}
+#item1 {
+	height: 120px;
+}
+#item2 {
+	height: 100px;
+}
+#item3 {
+	height: 40px;
+}
+#item4 {
+	height: 200px;
+	border-color: blue;
+}
+@media screen and (max-width:640px) {
+	.container {
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	#item4 {
+		order: -1;
+	}
+}

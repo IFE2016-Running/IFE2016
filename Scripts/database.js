@@ -37,6 +37,10 @@ var db = new Array();
                 title : '使用HTML/CSS实现一个复杂页面',
                 url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task9/index.html'
             },
+						'任务十' : {
+                title : 'Flexbox 布局练习',
+                url : 'http://ife2016-running.github.io/IFE2016/RunningCoder/stage1/task10/index.html'
+            },
         },
         '阶段二' : {
             '任务一' : '',
