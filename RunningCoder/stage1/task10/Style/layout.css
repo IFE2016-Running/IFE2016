@@ -1,10 +1,17 @@
 .container {
 	border: 1px solid #979797;
 	padding: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: space-between;
+	-ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .container div {
 	width: 150px;
@@ -26,11 +33,19 @@
 }
 @media screen and (max-width:640px) {
 	.container {
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		            -ms-grid-row-align: flex-start;
+		        align-items: flex-start;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 	#item4 {
-		order: -1;
+		-webkit-box-ordinal-group: 0;
+		    -ms-flex-order: -1;
+		        order: -1;
 	}
 }
